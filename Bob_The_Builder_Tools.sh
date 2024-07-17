@@ -73,37 +73,37 @@ function install_projectdiscovery(){
     ;;
   12)
     echo "Start intall tools" 
-    echo "Install Nuclei" 
+    echo "Install Nuclei" | lolcat
     go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
     echo "Finished" 
-    echo "Install Subfinder"
+    echo "Install Subfinder" | lolcat
     go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
     echo "Finished" 
-    echo "Install Httpx" 
+    echo "Install Httpx" | lolcat
     go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
     echo "Finished" 
-    echo "Install Naabu" 
+    echo "Install Naabu" | lolcat
     go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
     echo "Finished" 
-    echo "Install Interactsh" 
+    echo "Install Interactsh" | lolcat
     go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest
     echo "Finished" 
-    echo "Install Notify" 
+    echo "Install Notify" | lolcat
     go install -v github.com/projectdiscovery/notify/cmd/notify@latest
     echo "Finished" 
-    echo "Install Tlsx" 
+    echo "Install Tlsx" | lolcat
     go install github.com/projectdiscovery/tlsx/cmd/tlsx@latest
     echo "Fineshed" 
-    echo "Install Uncover" 
+    echo "Install Uncover" | lolcat
     go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest
     echo "Finished" 
-    echo "Install Katana" 
+    echo "Install Katana" | lolcat
     go install github.com/projectdiscovery/katana/cmd/katana@latest
     echo "Finished" 
-    echo "Install Dnsx" 
+    echo "Install Dnsx" | lolcat
     go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
     echo "Finished" 
-    echo "Install alterx" 
+    echo "Install alterx" | lolcat
     go install github.com/projectdiscovery/alterx/cmd/alterx@latest
     echo "Finished install projectdiscovery tools" 
     ;;
