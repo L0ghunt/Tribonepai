@@ -4,10 +4,10 @@
 function install_golang() {
  echo "run as sudo"
  echo "Download golang start"
- wget https://go.dev/dl/go1.21.0.linux-amd64.tar.gz
+ wget https://go.dev/dl/go1.23.1.linux-amd64.tar.gz
  echo "Download golang Fineshed"
  echo "Start descompact"
- rm -rf /usr/local/go && tar -C /usr/local -xzf go1.21.0.linux-amd64.tar.gz
+ rm -rf /usr/local/go && tar -C /usr/local -xzf go1.23.1.linux-amd64.tar.gz
  echo "Fineshed descompact"
  echo "Add /usr/local/go/bin to the PATH environment variable"
  export PATH=$PATH:/usr/local/go/bin
