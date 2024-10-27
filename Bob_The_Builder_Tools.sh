@@ -33,8 +33,9 @@ function install_projectdiscovery(){
   echo "9. Katana"
   echo "10. Dnsx"
   echo "11. alterx"
-  echo "12. Install all tools"
-  echo "13. Return to main menu"
+  echo "12. CVEMAP"
+  echo "13. Install all tools"
+  echo "14. Return to main menu"
   read option
 
   case $option in
@@ -72,6 +73,9 @@ function install_projectdiscovery(){
     go install github.com/projectdiscovery/alterx/cmd/alterx@latest
     ;;
   12)
+    go install github.com/projectdiscovery/cvemap/cmd/cvemap@latest
+    ;;
+  13)
     echo "Start intall tools" 
     echo "Install Nuclei" | lolcat
     go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
@@ -105,9 +109,12 @@ function install_projectdiscovery(){
     echo "Finished" 
     echo "Install alterx" | lolcat
     go install github.com/projectdiscovery/alterx/cmd/alterx@latest
-    echo "Finished install projectdiscovery tools" 
+    echo "Finished install projectdiscovery tools"
+    echo "Install CVEMAP" | lolcat
+    go install github.com/projectdiscovery/cvemap/cmd/cvemap@latest
+    echo "Finished install CVEMAP" 
     ;;
-  13)
+  14)
    back_to_menu
    ;;
 *)
@@ -588,6 +595,9 @@ function back_to_menu() {
      echo "Install Amass"
      go install -v github.com/owasp-amass/amass/v4/...@master
      echo "Finished"
+     echo "Install CVEMAP" | lolcat
+     go install github.com/projectdiscovery/cvemap/cmd/cvemap@latest
+     echo "Finished install CVEMAP" 
      ;;
    7)
      exit 0
@@ -610,7 +620,7 @@ clear
  echo "3. Tools by Tomnomnom"
  echo "4. Tools by Hakluke"
  echo "5. additional tools"
- echo "6. Install all tools"
+ echo "6. Install all tools *it will take a while*"
  echo "7. Exit"
  echo "0. Menu"
  read option
