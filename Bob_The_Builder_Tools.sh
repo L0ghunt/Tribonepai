@@ -8,36 +8,22 @@ function install_golang() {
  echo "   |  __'.  / .'`\ \  | '/'`\ \       | |      | .-. |  / /__\\     |  __'.  [  | | |  [  |   | |  / /'`\' |  / /__\\ [ `/'`\] " | lolcat
  echo "  _| |__) | | \__. |  |  \__/ |      _| |_     | | | |  | \__.,    _| |__) |  | \_/ |,  | |   | |  | \__/  |  | \__.,  | | " | lolcat
  echo " |_______/   '.__.'  [__;.__.'      |_____|   [___]|__]  '.__.'   |_______/   '.__.'_/ [___] [___]  '.__.;__]  '.__.' [___] " | lolcat
- echo " | lolcatrun as sudo" | lolcat
- echo " | lolcatDownload golang start" | lolcat
+ echo "run as sudo" | lolcat
+ echo "Download golang start" | lolcat
  wget https://go.dev/dl/go1.23.1.linux-amd64.tar.gz
- echo " | lolcatDownload golang Fineshed"
- echo " | lolcatStart descompact" | lolcat
+ echo "Download golang Fineshed"
+ echo "Start descompact" | lolcat
  rm -rf /usr/local/go && tar -C /usr/local -xzf go1.23.1.linux-amd64.tar.gz
- echo "neshed descompact" | lolcat
- echo " | lolcatAdd /usr/local/go/bin to the PATH environment variabled" | lolcat
+ echo "Finished  "descompact"
+ echo ""Add to the PATH environment variabled" | lolcat
  export PATH=$PATH:/usr/local/go/bin
- echo "nished"
- echo " | lolcatChecking installation" | lolcat
+ echo "Finished"
+ echo "Checking installation" | lolcat
  go version
- echo " | lolcatVerification completed"
- echo "nished install golang" | lolcat
+ echo "Verification completed"
+ echo "Finished install golang" | lolcat
 }
-# Função para instalar requirementos
-function install_requerimentos() {
-  echo "   ______              __           _________   __                  ______                _    __          __ " | lolcat
-  echo "  |_   _ \            [  |         |  _   _  | [  |                |_   _ \              (_)  [  |        |  ] " | lolcat
-  echo "   | |_) |    .--.    | |.--.     |_/ | | \_|  | |--.    .---.      | |_) |   __   _    __    | |    .--.| |   .---.   _ .--. " | lolcat
-  echo "   |  __'.  / .'`\ \  | '/'`\ \       | |      | .-. |  / /__\\     |  __'.  [  | | |  [  |   | |  / /'`\' |  / /__\\ [ `/'`\] " | lolcat
-  echo "  _| |__) | | \__. |  |  \__/ |      _| |_     | | | |  | \__.,    _| |__) |  | \_/ |,  | |   | |  | \__/  |  | \__.,  | | " | lolcat
-  echo " |_______/   '.__.'  [__;.__.'      |_____|   [___]|__]  '.__.'   |_______/   '.__.'_/ [___] [___]  '.__.;__]  '.__.' [___] " | lolcat
-  echo " | lolcatStart install requerimentos"
-  pip install lolcat
-  sudo pip install lolcat
-  sudo apt-get install figlet
-  sudo apt-get install toilet
-  echo "Finished install" | lolcat
-}
+
 # Função pra instalar tools projectdiscovery
 function install_projectdiscovery(){
   clear
@@ -219,37 +205,37 @@ function install_tomnomnom(){
   12)
      echo " Waybackurls" | lolcat 
      go install github.com/tomnomnom/waybackurls@latest
-     echo "Finished" 
+     echo "Finished " 
      echo " Assetfinder" | lolcat 
      go install github.com/tomnomnom/assetfinder@latest
-     echo "Finished" 
+     echo "Finished " 
      echo " Httprobed" | lolcat 
      go install github.com/tomnomnom/httprobe@latest
-     echo "Finished" 
+     echo "Finished " 
      echo " Gf" | lolcat 
      go install github.com/tomnomnom/gf@latest
-     echo "Finished" 
+     echo "Finished " 
      echo " Gron" | lolcat 
      go install github.com/tomnomnom/gron@latest
-     echo "Finished" 
+     echo "Finished " 
      echo " Qsreplaced" | lolcat 
      go install github.com/tomnomnom/qsreplace@latest
-     echo "Finished" 
+     echo "Finished " 
      echo " Meg" | lolcat 
      go install github.com/tomnomnom/meg@latest
-     echo "Finished" 
+     echo "Finished " 
      echo " ffuf" | lolcat 
      go install github.com/ffuf/ffuf@latest
-     echo "Finished" 
+     echo "Finished " 
      echo " fff" | lolcat 
      go install github.com/tomnomnom/fff
-     echo "Finished" 
+     echo "Finished " 
      echo " Unfurl" | lolcat 
      go install github.com/tomnomnom/unfurl@latest
-     echo "Finished" 
+     echo "Finished " 
      echo " Anew" | lolcat 
      go install github.com/tomnomnom/anew@latest
-     echo "Finished Install Tomnomnom tools"
+     echo "Finished  Install Tomnomnom tools"
      ;;
 13)
    back_to_menu
@@ -408,62 +394,62 @@ function install_addtools() {
    20)
      echo " Dalfox" | lolcat
      go install github.com/hahwul/dalfox/v2@latest
-     echo "Finished"
-     echo "Finished install Hahwul tools" | lolcat
+     echo "Finished "
+     echo "Finished  install Hahwul tools" | lolcat
      echo " Dirsearch" | lolcat
      go install github.com/maurosoria/dirsearch@latest
-     echo "Finished"
+     echo "Finished "
      echo " Airixss" | lolcat
      go install github.com/ferreiraklet/airixss@latest
-     echo "Finished"
+     echo "Finished "
      echo " cf-check" | lolcat
      go install github.com/dwisiswant0/cf-check@latest
-     echo "Finished"
+     echo "Finished "
      echo " Freq" | lolcat
      go install github.com/takshal/freq@latest
-     echo "Finished"
+     echo "Finished "
      echo " gau" | lolcat
      go install github.com/lc/gau/v2/cmd/gau@latest
-     echo "Finished"
+     echo "Finished "
      echo " Gospider" | lolcat
      go install github.com/jaeles-project/gospider@latest
-     echo "Finished"
+     echo "Finished "
      echo " Gowitness" | lolcat
      go install github.com/sensepost/gowitness@latest
-     echo "Finished"
+     echo "Finished "
      echo " Goop" | lolcat
      go install github.com/deletescape/goop@latest
-     echo "Finished"
+     echo "Finished "
      echo " Getjs" | lolcat
      go install github.com/003random/getJS@latest
-     echo "Finished"
+     echo "Finished "
      echo " Jaeles" | lolcat
      go install github.com/jaeles-project/jaeles@latest
-     echo "Finished"
+     echo "Finished "
      echo " Jsubfinder" | lolcat
      go install github.com/ThreatUnkown/jsubfinder@latest
-     echo "Finished"
+     echo "Finished "
      echo " Kxss" | lolcat
      go install github.com/Emoe/kxss@latest
-     echo "Finished"
+     echo "Finished "
      echo " Metabigor" | lolcat
      go install github.com/j3ssie/metabigor@latest
-     echo "Finished"
+     echo "Finished "
      echo " Ruhs" | lolcat
      go install github.com/shenwei356/rush@latest
-     echo "Finished"
+     echo "Finished "
      echo " Subjs" | lolcat
      go install github.com/lc/subjs@latest
-     echo "Finished"
+     echo "Finished "
      echo " Unew" | lolcat
      go install github.com/dwisiswant0/unew@latest
-     echo "Finished"
+     echo "Finished "
      echo " Subjst" | lolcat
      go install github.com/lc/subjst@latest
-     echo "Finished"
+     echo "Finished "
      echo " Amass" | lolcat
      go install -v github.com/owasp-amass/amass/v4/...@master
-     echo "Finished"
+     echo "Finished "
      ;;
    21)
      back_to_menu
@@ -485,179 +471,177 @@ echo "   |  __'.  / .'`\ \  | '/'`\ \       | |      | .-. |  / /__\\     |  __'
 echo "  _| |__) | | \__. |  |  \__/ |      _| |_     | | | |  | \__.,    _| |__) |  | \_/ |,  | |   | |  | \__/  |  | \__.,  | | " | lolcat
 echo " |_______/   '.__.'  [__;.__.'      |_____|   [___]|__]  '.__.'   |_______/   '.__.'_/ [___] [___]  '.__.;__]  '.__.' [___] " | lolcat
 echo " Choose an option:"
-echo "1. Install requerimentos"
-echo "2. Instalar Golang"
-echo "3. Tools by Projectdiscovery"
-echo "4. Tools by Tomnomnom"
-echo "5. Tools by Hakluked"
-echo "6. additional tools"
-echo "7. ALL TOOLS (it may take a while)"
-echo "8. Exit"
+echo "1. Instalar Golang"
+echo "2. Tools by Projectdiscovery"
+echo "3. Tools by Tomnomnom"
+echo "4. Tools by Hakluked"
+echo "5. additional tools"
+echo "6. ALL TOOLS (it may take a while)"
+echo "7. Exit"
 echo "0. Menu"
 read option
 
 case $option in
+
   1)
-    install_requerimentos
-    ;;
-  2)
     install_golang
     ;;
-  3)
+  2)
     install_projectdiscovery
     ;;
-  4)
+  3)
     install_tomnomnom
     ;;
-  5)
+  4)
     install_Hakluke
     ;;
-  6)
+  5)
     install_addtools
     ;;
-  7)
+  6)
     echo " | lolcatStart intall tools" | lolcat
     echo " Nuclei" | lolcat
     go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
     echo "Fnished" 
     echo " Subfinder" | lolcat
      go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
-     echo "Finished"
+     echo "Finished "
      echo " Httpx" | lolcat
      go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
-     echo "Finished"
+     echo "Finished "
      echo " Naabu" | lolcat
      go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
-     echo "Finished"
+     echo "Finished "
      echo " Interactsh" | lolcat
      go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest
-     echo "Finished"
+     echo "Finished "
      echo " Notify" | lolcat
      go install -v github.com/projectdiscovery/notify/cmd/notify@latest
-     echo "Finished"
+     echo "Finished "
      echo " Tlsx" | lolcat
      go install github.com/projectdiscovery/tlsx/cmd/tlsx@latest
      echo "Fineshed"
      echo " Uncover" | lolcat
      go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest
-     echo "Finished"
+     echo "Finished "
      echo " Katana" | lolcat
      go install github.com/projectdiscovery/katana/cmd/katana@latest
-     echo "Finished" 
+     echo "Finished " 
      echo " Dnsx" | lolcat
      go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
-     echo "Finished" 
+     echo "Finished " 
      echo " alterx" | lolcat
      go install github.com/projectdiscovery/alterx/cmd/alterx@latest
-     echo "Finished install projectdiscovery tools" | lolcat 
+     echo "Finished  install projectdiscovery tools" | lolcat 
      echo " Waybackurls" | lolcat
      go install github.com/tomnomnom/waybackurls@latest
-     echo "Finished"
+     echo "Finished "
      echo " Assetfinder" | lolcat
      go install github.com/tomnomnom/assetfinder@latest
-     echo "Finished"
+     echo "Finished "
      echo " Httprobed" | lolcat
      go install github.com/tomnomnom/httprobe@latest
-     echo "Finished"
+     echo "Finished "
      echo " Gf" | lolcat
      go install github.com/tomnomnom/gf@latest
-     echo "Finished"
+     echo "Finished "
      echo " Gron" | lolcat
      go install github.com/tomnomnom/gron@latest
-     echo "Finished"
+     echo "Finished "
      echo " Qsreplaced" | lolcat
      go install github.com/tomnomnom/qsreplace@latest
-     echo "Finished"
+     echo "Finished "
      echo " Meg" | lolcat
      go install github.com/tomnomnom/meg@latest
-     echo "Finished"
+     echo "Finished "
      echo " ffuf" | lolcat
      go install github.com/ffuf/ffuf@latest
-     echo "Finished"
+     echo "Finished "
      echo " fff" | lolcat
      go install github.com/tomnomnom/fff
-     echo "Finished"
+     echo "Finished "
      echo " Unfurl" | lolcat
      go install github.com/tomnomnom/unfurl@latest
-     echo "Finished"
+     echo "Finished "
      echo " Anew" | lolcat
      go install github.com/tomnomnom/anew@latest
-     echo "Finished" | lolcat
-     echo "Finished Install Tomnomnom tools" | lolcat 
+     echo "Finished " | lolcat
+     echo "Finished  Install Tomnomnom tools" | lolcat 
      echo " Hakrawler" | lolcat
      go install github.com/hakluke/hakrawler@latest
-     echo "Finished" 
+     echo "Finished " 
      echo " Hakrevdns" | lolcat
      go install github.com/hakluke/hakrevdns@latest
-     echo "Finished"
+     echo "Finished "
      echo " Haktldextract" | lolcat
      go install github.com/hakluke/haktldextract@latest
-     echo "Finished"
+     echo "Finished "
      echo " Haklistgen" | lolcat
      go install github.com/hakluke/haklistgen@latest
-     echo "Finished"
-     echo "Finished Install Hakluke tools" | lolcat 
+     echo "Finished "
+     echo "Finished  Install Hakluke tools" | lolcat 
      echo " Dalfox" | lolcat
      go install github.com/hahwul/dalfox/v2@latest
-     echo "Finished"
-     echo "Finished install Hahwul tools" | lolcat
+     echo "Finished "
+     echo "Finished  install Hahwul tools" | lolcat
      echo " Dirsearch" | lolcat
      go install github.com/maurosoria/dirsearch@latest
-     echo "Finished"
+     echo "Finished "
      echo " Airixss" | lolcat
      go install github.com/ferreiraklet/airixss@latest
-     echo "Finished"
+     echo "Finished "
      echo " cf-check" | lolcat
      go install github.com/dwisiswant0/cf-check@latest
-     echo "Finished"
+     echo "Finished "
      echo " Freq" | lolcat
      go install github.com/takshal/freq@latest
-     echo "Finished"
+     echo "Finished "
      echo " gau" | lolcat
      go install github.com/lc/gau/v2/cmd/gau@latest
-     echo "Finished"
+     echo "Finished "
      echo " Gospider" | lolcat
      go install github.com/jaeles-project/gospider@latest
-     echo "Finished"
+     echo "Finished "
      echo " Gowitness" | lolcat
      go install github.com/sensepost/gowitness@latest
-     echo "Finished"
+     echo "Finished "
      echo " Goop" | lolcat
      go install github.com/deletescape/goop@latest
-     echo "Finished"
+     echo "Finished "
      echo " Getjs" | lolcat
      go install github.com/003random/getJS@latest
-     echo "Finished"
+     echo "Finished "
      echo " Jaeles" | lolcat
      go install github.com/jaeles-project/jaeles@latest
-     echo "Finished"
+     echo "Finished "
      echo " Jsubfinder" | lolcat
      go install github.com/ThreatUnkown/jsubfinder@latest
-     echo "Finished" 
+     echo "Finished " 
      echo " Kxss" | lolcat 
      go install github.com/Emoe/kxss@latest
-     echo "Finished"
+     echo "Finished "
      echo " Metabigor" | lolcat
      go install github.com/j3ssie/metabigor@latest
-     echo "Finished"
+     echo "Finished "
      echo " Ruhs" | lolcat
      go install github.com/shenwei356/rush@latest
-     echo "Finished"
+     echo "Finished "
      echo " Subjs" | lolcat
      go install github.com/lc/subjs@latest
-     echo "Finished"
+     echo "Finished "
      echo " Unew" | lolcat
      go install github.com/dwisiswant0/unew@latest
-     echo "Finished"
+     echo "Finished "
      echo " Subjst" | lolcat
      go install github.com/lc/subjst@latest
-     echo "Finished"
+     echo "Finished "
      echo " Amass" | lolcat
      go install -v github.com/owasp-amass/amass/v4/...@master
-     echo "Finished"
+     echo "Finished "
      echo " URLfinder" | lolcat
      go install -v github.com/projectdiscovery/urlfinder/cmd/urlfinder@latest
      echo "Fnished URLfinder" | lolcat
+     ;;
    8)
      exit 0
      ;;
@@ -680,181 +664,178 @@ echo "   |  __'.  / .'`\ \  | '/'`\ \       | |      | .-. |  / /__\\     |  __'
 echo "  _| |__) | | \__. |  |  \__/ |      _| |_     | | | |  | \__.,    _| |__) |  | \_/ |,  | |   | |  | \__/  |  | \__.,  | | " | lolcat
 echo " |_______/   '.__.'  [__;.__.'      |_____|   [___]|__]  '.__.'   |_______/   '.__.'_/ [___] [___]  '.__.;__]  '.__.' [___] " | lolcat
 echo " Choose an option:"
-echo "1. Install requerimentos"
-echo "2. Instalar Golang"
-echo "3. Tools by Projectdiscovery"
-echo "4. Tools by Tomnomnom"
-echo "5. Tools by Hakluked"
-echo "6. additional tools"
-echo "7. ALL TOOLS (it may take a while)"
-echo "8. Exit"
+echo "1. Instalar Golang"
+echo "2. Tools by Projectdiscovery"
+echo "3. Tools by Tomnomnom"
+echo "4. Tools by Hakluked"
+echo "5. additional tools"
+echo "6. ALL TOOLS (it may take a while)"
+echo "7. Exit"
 echo "0. Menu"
 read option
 
 case $option in
+
   1)
-    install_requerimentos
-    ;;
-  2)
     install_golang
     ;;
-  3)
+  2)
     install_projectdiscovery
     ;;
-  4)
+  3)
     install_tomnomnom
     ;;
-  5)
+  4)
     install_Hakluke
     ;;
-  6)
+  5)
     install_addtools
     ;;
-  7)
+  6)
     echo " | lolcatStart intall tools" | lolcat
     echo " Nuclei" | lolcat
     go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
     echo "Fnished" 
     echo " Subfinder" | lolcat
      go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
-     echo "Finished"
+     echo "Finished "
      echo " Httpx" | lolcat
      go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
-     echo "Finished"
+     echo "Finished "
      echo " Naabu" | lolcat
      go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
-     echo "Finished"
+     echo "Finished "
      echo " Interactsh" | lolcat
      go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest
-     echo "Finished"
+     echo "Finished "
      echo " Notify" | lolcat
      go install -v github.com/projectdiscovery/notify/cmd/notify@latest
-     echo "Finished"
+     echo "Finished "
      echo " Tlsx" | lolcat
      go install github.com/projectdiscovery/tlsx/cmd/tlsx@latest
      echo "Fineshed"
      echo " Uncover" | lolcat
      go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest
-     echo "Finished"
+     echo "Finished "
      echo " Katana" | lolcat
      go install github.com/projectdiscovery/katana/cmd/katana@latest
-     echo "Finished" 
+     echo "Finished " 
      echo " Dnsx" | lolcat
      go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
-     echo "Finished" 
+     echo "Finished " 
      echo " alterx" | lolcat
      go install github.com/projectdiscovery/alterx/cmd/alterx@latest
-     echo "Finished install projectdiscovery tools" | lolcat 
+     echo "Finished  install projectdiscovery tools" | lolcat 
      echo " Waybackurls" | lolcat
      go install github.com/tomnomnom/waybackurls@latest
-     echo "Finished"
+     echo "Finished "
      echo " Assetfinder" | lolcat
      go install github.com/tomnomnom/assetfinder@latest
-     echo "Finished"
+     echo "Finished "
      echo " Httprobed" | lolcat
      go install github.com/tomnomnom/httprobe@latest
-     echo "Finished"
+     echo "Finished "
      echo " Gf" | lolcat
      go install github.com/tomnomnom/gf@latest
-     echo "Finished"
+     echo "Finished "
      echo " Gron" | lolcat
      go install github.com/tomnomnom/gron@latest
-     echo "Finished"
+     echo "Finished "
      echo " Qsreplaced" | lolcat
      go install github.com/tomnomnom/qsreplace@latest
-     echo "Finished"
+     echo "Finished "
      echo " Meg" | lolcat
      go install github.com/tomnomnom/meg@latest
-     echo "Finished"
+     echo "Finished "
      echo " ffuf" | lolcat
      go install github.com/ffuf/ffuf@latest
-     echo "Finished"
+     echo "Finished "
      echo " fff" | lolcat
      go install github.com/tomnomnom/fff
-     echo "Finished"
+     echo "Finished "
      echo " Unfurl" | lolcat
      go install github.com/tomnomnom/unfurl@latest
-     echo "Finished"
+     echo "Finished "
      echo " Anew" | lolcat
      go install github.com/tomnomnom/anew@latest
-     echo "Finished" | lolcat
-     echo "Finished Install Tomnomnom tools" | lolcat 
+     echo "Finished " | lolcat
+     echo "Finished  Install Tomnomnom tools" | lolcat 
      echo " Hakrawler" | lolcat
      go install github.com/hakluke/hakrawler@latest
-     echo "Finished" 
+     echo "Finished " 
      echo " Hakrevdns" | lolcat
      go install github.com/hakluke/hakrevdns@latest
-     echo "Finished"
+     echo "Finished "
      echo " Haktldextract" | lolcat
      go install github.com/hakluke/haktldextract@latest
-     echo "Finished"
+     echo "Finished "
      echo " Haklistgen" | lolcat
      go install github.com/hakluke/haklistgen@latest
-     echo "Finished"
-     echo "Finished Install Hakluke tools" | lolcat 
+     echo "Finished "
+     echo "Finished  Install Hakluke tools" | lolcat 
      echo " Dalfox" | lolcat
      go install github.com/hahwul/dalfox/v2@latest
-     echo "Finished"
-     echo "Finished install Hahwul tools" | lolcat
+     echo "Finished "
+     echo "Finished  install Hahwul tools" | lolcat
      echo " Dirsearch" | lolcat
      go install github.com/maurosoria/dirsearch@latest
-     echo "Finished"
+     echo "Finished "
      echo " Airixss" | lolcat
      go install github.com/ferreiraklet/airixss@latest
-     echo "Finished"
+     echo "Finished "
      echo " cf-check" | lolcat
      go install github.com/dwisiswant0/cf-check@latest
-     echo "Finished"
+     echo "Finished "
      echo " Freq" | lolcat
      go install github.com/takshal/freq@latest
-     echo "Finished"
+     echo "Finished "
      echo " gau" | lolcat
      go install github.com/lc/gau/v2/cmd/gau@latest
-     echo "Finished"
+     echo "Finished "
      echo " Gospider" | lolcat
      go install github.com/jaeles-project/gospider@latest
-     echo "Finished"
+     echo "Finished "
      echo " Gowitness" | lolcat
      go install github.com/sensepost/gowitness@latest
-     echo "Finished"
+     echo "Finished "
      echo " Goop" | lolcat
      go install github.com/deletescape/goop@latest
-     echo "Finished"
+     echo "Finished "
      echo " Getjs" | lolcat
      go install github.com/003random/getJS@latest
-     echo "Finished"
+     echo "Finished "
      echo " Jaeles" | lolcat
      go install github.com/jaeles-project/jaeles@latest
-     echo "Finished"
+     echo "Finished "
      echo " Jsubfinder" | lolcat
      go install github.com/ThreatUnkown/jsubfinder@latest
-     echo "Finished" 
+     echo "Finished " 
      echo " Kxss" | lolcat 
      go install github.com/Emoe/kxss@latest
-     echo "Finished"
+     echo "Finished "
      echo " Metabigor" | lolcat
      go install github.com/j3ssie/metabigor@latest
-     echo "Finished"
+     echo "Finished "
      echo " Ruhs" | lolcat
      go install github.com/shenwei356/rush@latest
-     echo "Finished"
+     echo "Finished "
      echo " Subjs" | lolcat
      go install github.com/lc/subjs@latest
-     echo "Finished"
+     echo "Finished "
      echo " Unew" | lolcat
      go install github.com/dwisiswant0/unew@latest
-     echo "Finished"
+     echo "Finished "
      echo " Subjst" | lolcat
      go install github.com/lc/subjst@latest
-     echo "Finished"
+     echo "Finished "
      echo " Amass" | lolcat
      go install -v github.com/owasp-amass/amass/v4/...@master
-     echo "Finished"
+     echo "Finished "
      echo " URLfinder" | lolcat
      go install -v github.com/projectdiscovery/urlfinder/cmd/urlfinder@latest
      echo "Fnished URLfinder" | lolcat
      ;;
-   8)
+   7)
      exit 0
      ;;
    0)
