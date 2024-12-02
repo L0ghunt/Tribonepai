@@ -18,7 +18,10 @@ install_requerimentos() {
   echo "Dependências instaladas!"
   
 }
-
+# Função para export
+run_export() {
+  export PATH=$PATH:/usr/local/go/bin
+}
 # Função para instalar ferramentas do ProjectDiscovery
 install_projectdiscovery() {
   echo "Instalando ferramentas do ProjectDiscovery..." | lolcat
@@ -178,6 +181,7 @@ while true; do
   echo "4. Ferramentas Hakluke"
   echo "5. Ferramentas Adicionais"
   echo "6. Todas as ferramentas"
+  echo "7. Export PATH"
   echo "0. Sair"
   read -p "Opção: " option
 
@@ -199,6 +203,9 @@ while true; do
       ;;
     6)
       install_all
+      ;;
+    7)
+      run_export
       ;;
     0)
       echo "Saindo..." | lolcat
