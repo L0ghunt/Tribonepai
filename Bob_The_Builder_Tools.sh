@@ -2,6 +2,12 @@
 
 # Função para instalar o Golang
 function install_golang() {
+ echo "   ______              __           _________   __                  ______                _    __          __ " | lolcat
+ echo "  |_   _ \            [  |         |  _   _  | [  |                |_   _ \              (_)  [  |        |  ] " | lolcat
+ echo "   | |_) |    .--.    | |.--.     |_/ | | \_|  | |--.    .---.      | |_) |   __   _    __    | |    .--.| |   .---.   _ .--. " | lolcat
+ echo "   |  __'.  / .'`\ \  | '/'`\ \       | |      | .-. |  / /__\\     |  __'.  [  | | |  [  |   | |  / /'`\' |  / /__\\ [ `/'`\] " | lolcat
+ echo "  _| |__) | | \__. |  |  \__/ |      _| |_     | | | |  | \__.,    _| |__) |  | \_/ |,  | |   | |  | \__/  |  | \__.,  | | " | lolcat
+ echo " |_______/   '.__.'  [__;.__.'      |_____|   [___]|__]  '.__.'   |_______/   '.__.'_/ [___] [___]  '.__.;__]  '.__.' [___] " | lolcat
  echo " | lolcatrun as sudo" | lolcat
  echo " | lolcatDownload golang start" | lolcat
  wget https://go.dev/dl/go1.23.1.linux-amd64.tar.gz
@@ -19,15 +25,28 @@ function install_golang() {
 }
 # Função para instalar requirementos
 function install_requerimentos() {
+  echo "   ______              __           _________   __                  ______                _    __          __ " | lolcat
+  echo "  |_   _ \            [  |         |  _   _  | [  |                |_   _ \              (_)  [  |        |  ] " | lolcat
+  echo "   | |_) |    .--.    | |.--.     |_/ | | \_|  | |--.    .---.      | |_) |   __   _    __    | |    .--.| |   .---.   _ .--. " | lolcat
+  echo "   |  __'.  / .'`\ \  | '/'`\ \       | |      | .-. |  / /__\\     |  __'.  [  | | |  [  |   | |  / /'`\' |  / /__\\ [ `/'`\] " | lolcat
+  echo "  _| |__) | | \__. |  |  \__/ |      _| |_     | | | |  | \__.,    _| |__) |  | \_/ |,  | |   | |  | \__/  |  | \__.,  | | " | lolcat
+  echo " |_______/   '.__.'  [__;.__.'      |_____|   [___]|__]  '.__.'   |_______/   '.__.'_/ [___] [___]  '.__.;__]  '.__.' [___] " | lolcat
   echo " | lolcatStart install requerimentos"
   pip install lolcat
-  apt-get install figlet
-  apt-get install toilet
+  sudo pip install lolcat
+  sudo apt-get install figlet
+  sudo apt-get install toilet
   echo "Finished install" | lolcat
 }
 # Função pra instalar tools projectdiscovery
 function install_projectdiscovery(){
   clear
+  echo "   ______              __           _________   __                  ______                _    __          __ " | lolcat
+  echo "  |_   _ \            [  |         |  _   _  | [  |                |_   _ \              (_)  [  |        |  ] " | lolcat
+  echo "   | |_) |    .--.    | |.--.     |_/ | | \_|  | |--.    .---.      | |_) |   __   _    __    | |    .--.| |   .---.   _ .--. " | lolcat
+  echo "   |  __'.  / .'`\ \  | '/'`\ \       | |      | .-. |  / /__\\     |  __'.  [  | | |  [  |   | |  / /'`\' |  / /__\\ [ `/'`\] " | lolcat
+  echo "  _| |__) | | \__. |  |  \__/ |      _| |_     | | | |  | \__.,    _| |__) |  | \_/ |,  | |   | |  | \__/  |  | \__.,  | | " | lolcat
+  echo " |_______/   '.__.'  [__;.__.'      |_____|   [___]|__]  '.__.'   |_______/   '.__.'_/ [___] [___]  '.__.;__]  '.__.' [___] " | lolcat
   echo "Choose an option:"
   echo "1. Nuclei"
   echo "2. Subfinder"
@@ -141,6 +160,12 @@ esac
 # Função para instalar tools do tomnomnom
 function install_tomnomnom(){
   clear
+  echo "   ______              __           _________   __                  ______                _    __          __ " | lolcat
+  echo "  |_   _ \            [  |         |  _   _  | [  |                |_   _ \              (_)  [  |        |  ] " | lolcat
+  echo "   | |_) |    .--.    | |.--.     |_/ | | \_|  | |--.    .---.      | |_) |   __   _    __    | |    .--.| |   .---.   _ .--. " | lolcat
+  echo "   |  __'.  / .'`\ \  | '/'`\ \       | |      | .-. |  / /__\\     |  __'.  [  | | |  [  |   | |  / /'`\' |  / /__\\ [ `/'`\] " | lolcat
+  echo "  _| |__) | | \__. |  |  \__/ |      _| |_     | | | |  | \__.,    _| |__) |  | \_/ |,  | |   | |  | \__/  |  | \__.,  | | " | lolcat
+  echo " |_______/   '.__.'  [__;.__.'      |_____|   [___]|__]  '.__.'   |_______/   '.__.'_/ [___] [___]  '.__.;__]  '.__.' [___] " | lolcat
   echo "Choose an option"
   echo "1. anew"
   echo "2. Assetfinder"
@@ -239,6 +264,12 @@ esac
 # Função para instalar tools do Hakluke
 function install_Hakluke() {
   clear
+  echo "   ______              __           _________   __                  ______                _    __          __ " | lolcat
+  echo "  |_   _ \            [  |         |  _   _  | [  |                |_   _ \              (_)  [  |        |  ] " | lolcat
+  echo "   | |_) |    .--.    | |.--.     |_/ | | \_|  | |--.    .---.      | |_) |   __   _    __    | |    .--.| |   .---.   _ .--. " | lolcat
+  echo "   |  __'.  / .'`\ \  | '/'`\ \       | |      | .-. |  / /__\\     |  __'.  [  | | |  [  |   | |  / /'`\' |  / /__\\ [ `/'`\] " | lolcat
+  echo "  _| |__) | | \__. |  |  \__/ |      _| |_     | | | |  | \__.,    _| |__) |  | \_/ |,  | |   | |  | \__/  |  | \__.,  | | " | lolcat
+  echo " |_______/   '.__.'  [__;.__.'      |_____|   [___]|__]  '.__.'   |_______/   '.__.'_/ [___] [___]  '.__.;__]  '.__.' [___] " | lolcat
   echo "Choose an option:"
   echo "1. Hakrawler"
   echo "2. Hakredns"
@@ -286,6 +317,12 @@ function install_Hakluke() {
 # Função para instalar outras tools
 function install_addtools() {
   clear
+  echo "   ______              __           _________   __                  ______                _    __          __ " | lolcat
+  echo "  |_   _ \            [  |         |  _   _  | [  |                |_   _ \              (_)  [  |        |  ] " | lolcat
+  echo "   | |_) |    .--.    | |.--.     |_/ | | \_|  | |--.    .---.      | |_) |   __   _    __    | |    .--.| |   .---.   _ .--. " | lolcat
+  echo "   |  __'.  / .'`\ \  | '/'`\ \       | |      | .-. |  / /__\\     |  __'.  [  | | |  [  |   | |  / /'`\' |  / /__\\ [ `/'`\] " | lolcat
+  echo "  _| |__) | | \__. |  |  \__/ |      _| |_     | | | |  | \__.,    _| |__) |  | \_/ |,  | |   | |  | \__/  |  | \__.,  | | " | lolcat
+  echo " |_______/   '.__.'  [__;.__.'      |_____|   [___]|__]  '.__.'   |_______/   '.__.'_/ [___] [___]  '.__.;__]  '.__.' [___] " | lolcat
   echo "Choose an option:"
   echo "1. Dalfox"
   echo "2. Dirsearch"
@@ -454,6 +491,8 @@ echo "3. Tools by Projectdiscovery"
 echo "4. Tools by Tomnomnom"
 echo "5. Tools by Hakluked"
 echo "6. additional tools"
+echo "7. ALL TOOLS (it may take a while)"
+echo "8. Exit"
 echo "0. Menu"
 read option
 
@@ -647,6 +686,8 @@ echo "3. Tools by Projectdiscovery"
 echo "4. Tools by Tomnomnom"
 echo "5. Tools by Hakluked"
 echo "6. additional tools"
+echo "7. ALL TOOLS (it may take a while)"
+echo "8. Exit"
 echo "0. Menu"
 read option
 
