@@ -168,12 +168,9 @@ install_all() {
 # Menu principal
 while true; do
   clear
-  echo "   ______              __           _________   __                  ______                _    __          __ " | lolcat
-  echo "  |_   _ \            [  |         |  _   _  | [  |                |_   _ \              (_)  [  |        |  ] " | lolcat
-  echo "   | |_) |    .--.    | |.--.     |_/ | | \_|  | |--.    .---.      | |_) |   __   _    __    | |    .--.| |   .---.   _ .--. " | lolcat
-  echo "   |  __'.  / .'`\ \  | '/'`\ \       | |      | .-. |  / /__\\     |  __'.  [  | | |  [  |   | |  / /'`\' |  / /__\\ [ `/'`\] " | lolcat
-  echo "  _| |__) | | \__. |  |  \__/ |      _| |_     | | | |  | \__.,    _| |__) |  | \_/ |,  | |   | |  | \__/  |  | \__.,  | | " | lolcat
-  echo " |_______/   '.__.'  [__;.__.'      |_____|   [___]|__]  '.__.'   |_______/   '.__.'_/ [___] [___]  '.__.;__]  '.__.' [___] " | lolcat
+  echo "BOB THE BUILDER TOOLS" | lolcat
+  echo "version: 2.0" | lolcat
+  echo "BY: NEVERL0G" | lolcat
   echo " Escolha uma opção:"
   echo "1. Instalar Requisitos"
   echo "2. Ferramentas ProjectDiscovery"
