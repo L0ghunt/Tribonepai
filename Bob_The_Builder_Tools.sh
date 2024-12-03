@@ -25,7 +25,7 @@ run_export() {
 # Função para instalar ferramentas do ProjectDiscovery
 install_projectdiscovery() {
   echo "Instalando ferramentas do ProjectDiscovery..." | lolcat
-  tools=("nuclei/v2/cmd/nuclei"
+  tools=("/nuclei/v3/cmd/nuclei"# atualizado
          "subfinder/v2/cmd/subfinder"
          "httpx/cmd/httpx"
          "naabu/v2/cmd/naabu"
@@ -36,7 +36,12 @@ install_projectdiscovery() {
          "katana/cmd/katana"
          "dnsx/cmd/dnsx"
          "alterx/cmd/alterx"
-         "projectdiscovery/urlfinder/cmd/urlfinder")
+         "projectdiscovery/urlfinder/cmd/urlfinder"
+         "/shuffledns/cmd/shuffledns"
+         "/asnmap/cmd/asnmap"
+         "/cvemap/cmd/cvemap"
+         "/wappalyzergo/cmd/update-fingerprints"
+         "/cdncheck/cmd/cdncheck")
 
   for tool in "${tools[@]}"; do
     echo "Instalando $tool..." | lolcat
