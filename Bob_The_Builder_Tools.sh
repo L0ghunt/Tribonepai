@@ -10,167 +10,247 @@ back_to_menu() {
 install_requerimentos() {
   echo "Atualizando pacotes e instalando dependências..."
   sudo apt update && sudo apt upgrade -y
+  echo "Proximo requerimento"
   sudo pip install lolcat
+  echo "Proximo requerimento"
   wget https://go.dev/dl/go1.23.1.linux-amd64.tar.gz
+  echo "Proximo requerimento"
   rm -rf /usr/local/go && tar -C /usr/local -xzf go1.23.1.linux-amd64.tar.gz
+  echo "Proximo requerimento"
   export PATH=$PATH:/usr/local/go/bin
+  echo "Proximo requerimento"
   go version
   echo "Dependências instaladas!"
   
 }
 # Função para export
 run_export() {
-  export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/go/bin
 }
 # Função para instalar ferramentas do ProjectDiscovery
 install_projectdiscovery() {
   echo "Instalando ferramentas do ProjectDiscovery..." | lolcat
-  tools=("/nuclei/v3/cmd/nuclei"# atualizado
-         "subfinder/v2/cmd/subfinder"
-         "httpx/cmd/httpx"
-         "naabu/v2/cmd/naabu"
-         "interactsh/cmd/interactsh-client"
-         "notify/cmd/notify"
-         "tlsx/cmd/tlsx"
-         "uncover/cmd/uncover"
-         "katana/cmd/katana"
-         "dnsx/cmd/dnsx"
-         "alterx/cmd/alterx"
-         "projectdiscovery/urlfinder/cmd/urlfinder"
-         "/shuffledns/cmd/shuffledns"
-         "/asnmap/cmd/asnmap"
-         "/cvemap/cmd/cvemap"
-         "/wappalyzergo/cmd/update-fingerprints"
-         "/cdncheck/cmd/cdncheck")
-
-  for tool in "${tools[@]}"; do
-    echo "Instalando $tool..." | lolcat
-    go install -v github.com/projectdiscovery/${tool}@latest
-    echo "$tool instalado com sucesso!" | lolcat
-  done
+  go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/notify/cmd/notify@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/tlsx/cmd/tlsx@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/katana/cmd/katana@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/alterx/cmd/alterx@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/projectdiscovery/urlfinder/cmd/urlfinder@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/shuffledns/cmd/shuffledns@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/asnmap/cmd/asnmap@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/=cvemap/cmd/cvemap@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/appalyzergo/cmd/update-fingerprints@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/cdncheck/cmd/cdncheck@latest
+  echo "instalado com sucesso!" | lolcat
 }
 
 # Função para instalar ferramentas do Tomnomnom
 install_tomnomnom() {
   echo "Instalando ferramentas do Tomnomnom..." | lolcat
-  tools=("waybackurls"
-         "assetfinder"
-         "httprobe"
-         "gf"
-         "gron"
-         "qsreplace"
-         "meg"
-         "ffuf"
-         "fff"
-         "unfurl"
-         "anew")
-
-  for tool in "${tools[@]}"; do
-    echo "Instalando $tool..." | lolcat
-    go install github.com/tomnomnom/${tool}@latest
-    echo "$tool instalado com sucesso!" | lolcat
-  done
+  go install -V github.com/tomnomnom/waybackurls@latest
+  echo "next tool" | lolcat
+  go install -V github.com/tomnomnom/assetfinder@latest
+  echo "next tool" | lolcat
+  go install -V github.com/tomnomnom/httprobe@latest
+  echo "next tool" | lolcat
+  go install -V github.com/tomnomnom/gf@latest
+  echo "next tool" | lolcat
+  go install -V github.com/tomnomnom/gron@latest
+  echo "next tool" | lolcat
+  go install -V github.com/tomnomnom/qsreplace@latest
+  echo "next tool" | lolcat
+  go install -V github.com/tomnomnom/meg@latest
+  echo "next tool" | lolcat
+  go install -V github.com/tomnomnom/ffuf@latest
+  echo "next tool" | lolcat
+  go install -V github.com/tomnomnom/fff@latest
+  echo "next tool" | lolcat
+  go install -V github.com/tomnomnom/unfurl@latest
+  echo "next tool" | lolcat
+  go install -V github.com/tomnomnom/anew@latest
+  echo "instalado com sucesso!" | lolcat 
 }
 
 # Função para instalar ferramentas do Hakluke
 install_Hakluke() {
   echo "Instalando ferramentas do Hakluke..." | lolcat
-  tools=("hakrawler"
-         "hakrevdns"
-         "haktldextract"
-         "haklistgen")
-
-  for tool in "${tools[@]}"; do
-    echo "Instalando $tool..." | lolcat
-    go install github.com/hakluke/${tool}@latest
-    echo "$tool instalado com sucesso!" | lolcat
-  done
+  go install -V github.com/hakluke/hakrawler@latest
+  echo "next tool" | lolcat
+  go install -V github.com/hakluke/hakrevdns@latest
+  echo "next tool" | lolcat
+  go install -V github.com/hakluke/haktldextract@latest
+  echo "next tool" | lolcat
+  go install -V github.com/hakluke/haklistgen@latest
+  echo "instalado com sucesso!" | lolcat
 }
 
 # Função para instalar ferramentas adicionais
 install_addtools() {
   echo "Instalando ferramentas adicionais..." | lolcat
-  tools=("hahwul/dalfox/v2"
-         "maurosoria/dirsearch"
-         "ferreiraklet/airixss"
-         "dwisiswant0/cf-check"
-         "takshal/freq"
-         "lc/gau/v2/cmd/gau"
-         "jaeles-project/gospider"
-         "sensepost/gowitness"
-         "deletescape/goop"
-         "003random/getJS"
-         "jaeles-project/jaeles"
-         "ThreatUnkown/jsubfinder"
-         "Emoe/kxss"
-         "j3ssie/metabigor"
-         "shenwei356/rush"
-         "lc/subjs"
-         "dwisiswant0/unew"
-         "lc/subjst"
-         "owasp-amass/amass/v4/...")
-
-  for tool in "${tools[@]}"; do
-    echo "Instalando $tool..." | lolcat
-    go install -v github.com/${tool}@latest
-    echo "$tool instalado com sucesso!" | lolcat
-  done
+  go install -v github.com/hahwul/dalfox/v2@latest
+  echo "next tool" | lolcat
+  go install -v github.com/maurosoria/dirsearch@latest
+  echo "next tool" | lolcat
+  go install -v github.com/ferreiraklet/airixss@latest
+  echo "next tool" | lolcat
+  go install -v github.com/dwisiswant0/cf-check@latest
+  echo "next tool" | lolcat
+  go install -v github.com/takshal/freq@latest
+  echo "next tool" | lolcat
+  go install -v github.com/lc/gau/v2/cmd/gau@latest
+  echo "next tool" | lolcat
+  go install -v github.com/jaeles-project/gospider@latest
+  echo "next tool" | lolcat
+  go install -v github.com/sensepost/gowitness@latest
+  echo "next tool" | lolcat
+  go install -v github.com/deletescape/goop@latest
+  echo "next tool" | lolcat
+  go install -v github.com/003random/getJS@latest
+  echo "next tool" | lolcat
+  go install -v github.com/jaeles-project/jaeles@latest
+  go install -v github.com/ThreatUnkown/jsubfinder@latest
+  echo "next tool" | lolcat
+  go install -v github.com/Emoe/kxss@latest
+  echo "next tool" | lolcat
+  go install -v github.com/j3ssie/metabigor@latest
+  echo "next tool" | lolcat
+  go install -v github.com/shenwei356/rush@latest
+  echo "next tool" | lolcat
+  go install -v github.com/lc/subjs@latest
+  echo "next tool" | lolcat
+  go install -v github.com/dwisiswant0/unew@latest
+  echo "next tool" | lolcat
+  go install -v github.com/lc/subjst@latest
+  echo "next tool" | lolcat
+  go install -v github.com/owasp-amass/amass/v4/...@latest
+  echo "instalado com sucesso!" | lolcat
 }
-# Função para instalar ferramentas adicionais
+# Função para instalar todas as tool ferramentas
 install_all() {
-  echo "Instalando ferramentas adicionais..." | lolcat
-  tools=("nuclei/v2/cmd/nuclei"
-         "subfinder/v2/cmd/subfinder"
-         "httpx/cmd/httpx"
-         "naabu/v2/cmd/naabu"
-         "interactsh/cmd/interactsh-client"
-         "notify/cmd/notify"
-         "tlsx/cmd/tlsx"
-         "uncover/cmd/uncover"
-         "katana/cmd/katana"
-         "dnsx/cmd/dnsx"
-         "alterx/cmd/alterx"
-         "projectdiscovery/urlfinder/cmd/urlfinder"
-         "waybackurls"
-         "assetfinder"
-         "httprobe"
-         "gf"
-         "gron"
-         "qsreplace"
-         "meg"
-         "ffuf"
-         "fff"
-         "unfurl"
-         "anew"
-         "hakrawler"
-         "hakrevdns"
-         "haktldextract"
-         "haklistgen"
-         "hahwul/dalfox/v2"
-         "maurosoria/dirsearch"
-         "ferreiraklet/airixss"
-         "dwisiswant0/cf-check"
-         "takshal/freq"
-         "lc/gau/v2/cmd/gau"
-         "jaeles-project/gospider"
-         "sensepost/gowitness"
-         "deletescape/goop"
-         "003random/getJS"
-         "jaeles-project/jaeles"
-         "ThreatUnkown/jsubfinder"
-         "Emoe/kxss"
-         "j3ssie/metabigor"
-         "shenwei356/rush"
-         "lc/subjs"
-         "dwisiswant0/unew"
-         "lc/subjst"
-         "owasp-amass/amass/v4/...")
-
-  for tool in "${tools[@]}"; do
-    echo "Instalando $tool..." | lolcat
-    go install -v github.com/${tool}@latest
-    echo "$tool instalado com sucesso!" | lolcat
-  done
+  echo "Instalando todas as ferramentas" | lolcat
+  go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/notify/cmd/notify@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/tlsx/cmd/tlsx@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/katana/cmd/katana@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/alterx/cmd/alterx@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/projectdiscovery/urlfinder/cmd/urlfinder@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/shuffledns/cmd/shuffledns@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/asnmap/cmd/asnmap@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/=cvemap/cmd/cvemap@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/appalyzergo/cmd/update-fingerprints@latest
+  echo "next tool" | lolcat
+  go install -v github.com/projectdiscovery/cdncheck/cmd/cdncheck@latest
+  echo "next tool" | lolcat
+  go install -V github.com/tomnomnom/waybackurls@latest
+  echo "next tool" | lolcat
+  go install -V github.com/tomnomnom/assetfinder@latest
+  echo "next tool" | lolcat
+  go install -V github.com/tomnomnom/httprobe@latest
+  echo "next tool" | lolcat
+  go install -V github.com/tomnomnom/gf@latest
+  echo "next tool" | lolcat
+  go install -V github.com/tomnomnom/gron@latest
+  echo "next tool" | lolcat
+  go install -V github.com/tomnomnom/qsreplace@latest
+  echo "next tool" | lolcat
+  go install -V github.com/tomnomnom/meg@latest
+  echo "next tool" | lolcat
+  go install -V github.com/tomnomnom/ffuf@latest
+  echo "next tool" | lolcat
+  go install -V github.com/tomnomnom/fff@latest
+  echo "next tool" | lolcat
+  go install -V github.com/tomnomnom/unfurl@latest
+  echo "next tool" | lolcat
+  go install -V github.com/tomnomnom/anew@latest
+  echo "next tool" | lolcat
+  go install -V github.com/hakluke/hakrawler@latest
+  echo "next tool" | lolcat
+  go install -V github.com/hakluke/hakrevdns@latest
+  echo "next tool" | lolcat
+  go install -V github.com/hakluke/haktldextract@latest
+  echo "next tool" | lolcat
+  go install -V github.com/hakluke/haklistgen@latest
+  go install -v github.com/hahwul/dalfox/v2@latest
+  echo "next tool" | lolcat
+  go install -v github.com/maurosoria/dirsearch@latest
+  echo "next tool" | lolcat
+  go install -v github.com/ferreiraklet/airixss@latest
+  echo "next tool" | lolcat
+  go install -v github.com/dwisiswant0/cf-check@latest
+  echo "next tool" | lolcat
+  go install -v github.com/takshal/freq@latest
+  echo "next tool" | lolcat
+  go install -v github.com/lc/gau/v2/cmd/gau@latest
+  echo "next tool" | lolcat
+  go install -v github.com/jaeles-project/gospider@latest
+  echo "next tool" | lolcat
+  go install -v github.com/sensepost/gowitness@latest
+  echo "next tool" | lolcat
+  go install -v github.com/deletescape/goop@latest
+  echo "next tool" | lolcat
+  go install -v github.com/003random/getJS@latest
+  echo "next tool" | lolcat
+  go install -v github.com/jaeles-project/jaeles@latest
+  echo "next tool" | lolcat
+  go install -v github.com/ThreatUnkown/jsubfinder@latest
+  echo "next tool" | lolcat
+  go install -v github.com/Emoe/kxss@latest
+  echo "next tool" | lolcat
+  go install -v github.com/j3ssie/metabigor@latest
+  echo "next tool" | lolcat
+  go install -v github.com/shenwei356/rush@latest
+  echo "next tool" | lolcat
+  go install -v github.com/lc/subjs@latest
+  echo "next tool" | lolcat
+  go install -v github.com/dwisiswant0/unew@latest
+  echo "next tool" | lolcat
+  go install -v github.com/lc/subjst@latest
+  echo "next tool" | lolcat
+  go install -v github.com/owasp-amass/amass/v4/...@latest
+  echo "instalado com sucesso!" | lolcat
 }
 
 # Menu principal
