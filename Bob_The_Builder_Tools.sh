@@ -52,7 +52,7 @@ install_projectdiscovery() {
   echo "next tool" | lolcat
   go install -v github.com/projectdiscovery/alterx/cmd/alterx@latest
   echo "next tool" | lolcat
-  go install -v github.com/projectdiscovery/projectdiscovery/urlfinder/cmd/urlfinder@latest
+  go install -v github.com/projectdiscovery/urlfinder/cmd/urlfinder@latest
   echo "next tool" | lolcat
   go install -v github.com/projectdiscovery/shuffledns/cmd/shuffledns@latest
   echo "next tool" | lolcat
@@ -69,40 +69,40 @@ install_projectdiscovery() {
 # Função para instalar ferramentas do Tomnomnom
 install_tomnomnom() {
   echo "Instalando ferramentas do Tomnomnom..." | lolcat
-  go install -V github.com/tomnomnom/waybackurls@latest
+  go install -v github.com/tomnomnom/waybackurls@latest
   echo "next tool" | lolcat
-  go install -V github.com/tomnomnom/assetfinder@latest
+  go install -v github.com/tomnomnom/assetfinder@latest
   echo "next tool" | lolcat
-  go install -V github.com/tomnomnom/httprobe@latest
+  go install -v github.com/tomnomnom/httprobe@latest
   echo "next tool" | lolcat
-  go install -V github.com/tomnomnom/gf@latest
+  go install -v github.com/tomnomnom/gf@latest
   echo "next tool" | lolcat
-  go install -V github.com/tomnomnom/gron@latest
+  go install -v github.com/tomnomnom/gron@latest
   echo "next tool" | lolcat
-  go install -V github.com/tomnomnom/qsreplace@latest
+  go install -v github.com/tomnomnom/qsreplace@latest
   echo "next tool" | lolcat
-  go install -V github.com/tomnomnom/meg@latest
+  go install -v github.com/tomnomnom/meg@latest
   echo "next tool" | lolcat
-  go install -V github.com/tomnomnom/ffuf@latest
+  go install -v github.com/tomnomnom/ffuf@latest
   echo "next tool" | lolcat
-  go install -V github.com/tomnomnom/fff@latest
+  go install -v github.com/tomnomnom/fff@latest
   echo "next tool" | lolcat
-  go install -V github.com/tomnomnom/unfurl@latest
+  go install -v github.com/tomnomnom/unfurl@latest
   echo "next tool" | lolcat
-  go install -V github.com/tomnomnom/anew@latest
+  go install -v github.com/tomnomnom/anew@latest
   echo "instalado com sucesso!" | lolcat 
 }
 
 # Função para instalar ferramentas do Hakluke
 install_Hakluke() {
   echo "Instalando ferramentas do Hakluke..." | lolcat
-  go install -V github.com/hakluke/hakrawler@latest
+  go install -v github.com/hakluke/hakrawler@latest
   echo "next tool" | lolcat
-  go install -V github.com/hakluke/hakrevdns@latest
+  go install -v github.com/hakluke/hakrevdns@latest
   echo "next tool" | lolcat
-  go install -V github.com/hakluke/haktldextract@latest
+  go install -v github.com/hakluke/haktldextract@latest
   echo "next tool" | lolcat
-  go install -V github.com/hakluke/haklistgen@latest
+  go install -v github.com/hakluke/haklistgen@latest
   echo "instalado com sucesso!" | lolcat
 }
 
@@ -130,6 +130,7 @@ install_addtools() {
   go install -v github.com/003random/getJS@latest
   echo "next tool" | lolcat
   go install -v github.com/jaeles-project/jaeles@latest
+  echo "next tool" | lolcat
   go install -v github.com/ThreatUnkown/jsubfinder@latest
   echo "next tool" | lolcat
   go install -v github.com/Emoe/kxss@latest
@@ -172,7 +173,7 @@ install_all() {
   echo "next tool" | lolcat
   go install -v github.com/projectdiscovery/alterx/cmd/alterx@latest
   echo "next tool" | lolcat
-  go install -v github.com/projectdiscovery/projectdiscovery/urlfinder/cmd/urlfinder@latest
+  go install -v github.com/projectdiscovery/urlfinder/cmd/urlfinder@latest
   echo "next tool" | lolcat
   go install -v github.com/projectdiscovery/shuffledns/cmd/shuffledns@latest
   echo "next tool" | lolcat
@@ -184,35 +185,35 @@ install_all() {
   echo "next tool" | lolcat
   go install -v github.com/projectdiscovery/cdncheck/cmd/cdncheck@latest
   echo "next tool" | lolcat
-  go install -V github.com/tomnomnom/waybackurls@latest
+  go install -v github.com/tomnomnom/waybackurls@latest
   echo "next tool" | lolcat
-  go install -V github.com/tomnomnom/assetfinder@latest
+  go install -v github.com/tomnomnom/assetfinder@latest
   echo "next tool" | lolcat
-  go install -V github.com/tomnomnom/httprobe@latest
+  go install -v github.com/tomnomnom/httprobe@latest
   echo "next tool" | lolcat
-  go install -V github.com/tomnomnom/gf@latest
+  go install -v github.com/tomnomnom/gf@latest
   echo "next tool" | lolcat
-  go install -V github.com/tomnomnom/gron@latest
+  go install -v github.com/tomnomnom/gron@latest
   echo "next tool" | lolcat
-  go install -V github.com/tomnomnom/qsreplace@latest
+  go install -v github.com/tomnomnom/qsreplace@latest
   echo "next tool" | lolcat
-  go install -V github.com/tomnomnom/meg@latest
+  go install -v github.com/tomnomnom/meg@latest
   echo "next tool" | lolcat
-  go install -V github.com/tomnomnom/ffuf@latest
+  go install -v github.com/tomnomnom/ffuf@latest
   echo "next tool" | lolcat
-  go install -V github.com/tomnomnom/fff@latest
+  go install -v github.com/tomnomnom/fff@latest
   echo "next tool" | lolcat
-  go install -V github.com/tomnomnom/unfurl@latest
+  go install -v github.com/tomnomnom/unfurl@latest
   echo "next tool" | lolcat
-  go install -V github.com/tomnomnom/anew@latest
+  go install -v github.com/tomnomnom/anew@latest
   echo "next tool" | lolcat
-  go install -V github.com/hakluke/hakrawler@latest
+  go install -v github.com/hakluke/hakrawler@latest
   echo "next tool" | lolcat
-  go install -V github.com/hakluke/hakrevdns@latest
+  go install -v github.com/hakluke/hakrevdns@latest
   echo "next tool" | lolcat
-  go install -V github.com/hakluke/haktldextract@latest
+  go install -v github.com/hakluke/haktldextract@latest
   echo "next tool" | lolcat
-  go install -V github.com/hakluke/haklistgen@latest
+  go install -v github.com/hakluke/haklistgen@latest
   go install -v github.com/hahwul/dalfox/v2@latest
   echo "next tool" | lolcat
   go install -v github.com/maurosoria/dirsearch@latest
