@@ -15,9 +15,11 @@ install_requerimentos() {
   echo "Proximo requerimento"
   wget https://go.dev/dl/go1.23.1.linux-amd64.tar.gz
   echo "Proximo requerimento"
-  rm -rf /usr/local/go && tar -C /usr/local -xzf go1.23.1.linux-amd64.tar.gz
+  sudo rm -rf /usr/local/go 
+  sudo tar -C /usr/local -xzf go1.23.1.linux-amd64.tar.gz
   echo "Proximo requerimento"
   export PATH=$PATH:/usr/local/go/bin
+  sudo export PATH=$PATH:/usr/local/go/bin
   echo "Proximo requerimento"
   go version
   echo "Dependências instaladas!"
@@ -26,6 +28,7 @@ install_requerimentos() {
 # Função para export
 run_export() {
 export PATH=$PATH:/usr/local/go/bin
+sudo export PATH=$PATH:/usr/local/go/bin
 }
 # Função para instalar ferramentas do ProjectDiscovery
 install_projectdiscovery() {
